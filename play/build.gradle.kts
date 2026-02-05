@@ -14,7 +14,7 @@ repositories {
 
 dependencies {
     intellijPlatform {
-        intellijIdeaUltimate("2024.3.5")
+        intellijIdeaUltimate("2024.2")
         bundledPlugins(providers.gradleProperty("platformBundledPlugins").map { it.split(',') })
         testFramework(TestFrameworkType.Plugin.Java)
     }
@@ -29,10 +29,10 @@ intellijPlatform {
     pluginConfiguration {
         id = "com.intellij.play"
         name = "Play Framework"
-        version = "2024.3.5"
+        version = "2024.2"
         ideaVersion {
-            sinceBuild = "243"
-            untilBuild = "243.*"
+            sinceBuild = "242"
+            untilBuild = "242.*"
         }
     }
 }
